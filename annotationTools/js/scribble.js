@@ -119,17 +119,17 @@ function Scribble_canvas(tag) {
       }
       context.lineTo(this.clickX[i]*ratio, this.clickY[i]*ratio);
       if (this.clickColor[i] == OBJECT_DRAWING){
-        context.lineWidth = 5;
+        context.lineWidth = 1;
         context.globalCompositeOperation =  "source-over";
         context.strokeStyle = "#ff0000";
       } 
       else if (this.clickColor[i] == BG_DRAWING){
-        context.lineWidth = 5;
+        context.lineWidth = 1;
         context.globalCompositeOperation =  "source-over";
         context.strokeStyle = "#0000ff";
       } 
       else if (this.clickColor[i] == RUBBER_DRAWING){ 
-        context.lineWidth = 15;
+        context.lineWidth = 1;
         context.globalCompositeOperation =  "destination-out";
         context.strokeStyle = "rgba(0,0,0,1)";
       }
