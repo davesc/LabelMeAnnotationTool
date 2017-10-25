@@ -87,7 +87,7 @@ function mouseMoveCallback(e) {
         context.beginPath()
         context.moveTo(mousePosition.j, mousePosition.i);
         context.lineTo(j, i);
-        context.lineWidth = 3;
+        context.lineWidth = 1;
         var segment = $('input:radio[name=segment]:checked').val()
         if (segment == 'foreground') {
             context.strokeStyle = '#ff0000';
