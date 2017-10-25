@@ -107,7 +107,7 @@ function Scribble_canvas(tag) {
     }
     context.lineJoin = "miter";
     context.lineCap = "round";
-    context.lineWidth = 5;         
+    context.lineWidth = 1;         
     for(var i=0; i < this.clickX.length; i++) {        
       context.beginPath();
 
