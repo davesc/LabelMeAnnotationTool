@@ -139,8 +139,8 @@ function drawResult(resultData) {
 function hideButton() {
     var mode = $('input:radio[name=mode]:checked').val()
     if (mode == 'automatic') {
-        $('#compute').hide();
+        //$('#compute').hide();
     } else {
-        $('#compute').show();
+        //$('#compute').show();
     }
 }
