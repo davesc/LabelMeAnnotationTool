@@ -13,7 +13,8 @@ $(document).ready(function() {
     $('#scribbleCanvas').mousedown(mouseDownCallback);
     $('#scribbleCanvas').mousemove(mouseMoveCallback);
     $('#scribbleCanvas').mouseup(mouseUpCallback);
-    $('#compute').click(compute);
+    // commented this out to stop it from segmenting
+    //$('#compute').click(compute);
     $('input[name=mode]').click(hideButton);
     var imgNumber = Math.floor(numImages * Math.random()) + 1;
     // var imgNumber = 1;
