@@ -340,8 +340,10 @@ function Scribble_canvas(tag) {
     scribbleHeap.set(new Uint8Array(scribbleData.data.buffer));
 
     // Call function and get result
-    var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
-
+    // commented out to stop segmentation
+    // var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
+    var params = null;
+      
     var resultData = new Uint8ClampedArray(imageHeap.buffer, imageHeap.byteOffset, imageData.data.length);
     
     // Create canvas to store result
@@ -355,7 +357,8 @@ function Scribble_canvas(tag) {
     Module._free(scribbleHeap.byteOffset);
    
     result.getContext('2d').putImageData(resultImageData, 0, 0);
-
+    
+    
     return [result, params];
 
   }
