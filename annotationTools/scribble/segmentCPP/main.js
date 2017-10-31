@@ -28,7 +28,8 @@ function drawImageToCanvas(url) {
         resizeCanvas(img)
         var context = $('#imageCanvas')[0].getContext('2d');
         context.drawImage(img, 0, 0, img.width, img.height);
-        compute();
+        // commented this out to stop it from segmenting
+        // compute();
     }
 }
 
