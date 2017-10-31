@@ -107,7 +107,8 @@ function mouseUpCallback(e) {
     // var scribbleData = getImageData('scribbleCanvas');
     var mode = $('input:radio[name=mode]:checked').val()
     if (mode == 'automatic') {
-        compute();
+        // commented this out to stop it from segmenting
+        //compute();
     }
 }
 
