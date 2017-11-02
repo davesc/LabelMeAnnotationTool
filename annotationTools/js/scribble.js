@@ -340,8 +340,8 @@ function Scribble_canvas(tag) {
     scribbleHeap.set(new Uint8Array(scribbleData.data.buffer));
 
     // Call function and get result
-    var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
-    var params = null;
+    // var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
+    var params = 1;
       
     var resultData = new Uint8ClampedArray(imageHeap.buffer, imageHeap.byteOffset, imageData.data.length);
     
