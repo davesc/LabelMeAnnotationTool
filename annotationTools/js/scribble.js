@@ -340,8 +340,7 @@ function Scribble_canvas(tag) {
     scribbleHeap.set(new Uint8Array(scribbleData.data.buffer));
 
     // Call function and get result
-    // commented out to stop segmentation
-    // var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
+    var params = grabCut(imageHeap.byteOffset, scribbleHeap.byteOffset, imageData.height, imageData.width, scribble_canvas.colorseg);
     var params = null;
       
     var resultData = new Uint8ClampedArray(imageHeap.buffer, imageHeap.byteOffset, imageData.data.length);
@@ -565,7 +564,7 @@ function Scribble_canvas(tag) {
       this.segmentation_in_progress = 0;
       this.hidespinner();
     } 
-    else scribble_canvas.resizeandsaveImage(segment_ratio,fw,fh, annotation_ended, clx, cly);
+    //else scribble_canvas.resizeandsaveImage(segment_ratio,fw,fh, annotation_ended, clx, cly);
   }
   this.saveScribbles = function(){
     var collectionName = main_media.GetFileInfo().GetDirName().replace("///","/");
