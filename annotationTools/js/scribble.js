@@ -565,6 +565,10 @@ function Scribble_canvas(tag) {
       this.hidespinner();
     } 
     //else scribble_canvas.resizeandsaveImage(segment_ratio,fw,fh, annotation_ended, clx, cly);
+    else {
+      this.segmentation_in_progress = 0;
+      this.hidespinner();
+    }
   }
   this.saveScribbles = function(){
     var collectionName = main_media.GetFileInfo().GetDirName().replace("///","/");
