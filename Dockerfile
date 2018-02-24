@@ -50,4 +50,4 @@ RUN cd /var/www/ \
 EXPOSE 80
 
 # run
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+CMD ["/var/www/html/annotationTools/sh/populate_dirlist.sh",";","/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
