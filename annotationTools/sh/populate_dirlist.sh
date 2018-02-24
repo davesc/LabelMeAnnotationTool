@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Note: directories edited by DC for Docker input 
+
 # Populates list of images to label ("dirlist").  This list is stored
 # inside "/path/to/LabelMe/annotationCache/DirLists/".
 #
@@ -23,9 +25,9 @@
 # folder - Sub-folder under root folder
 
 # Pointer to Images/ and DirLists/ directories:
-HOMEIMAGES='../../Images'
-HOMEDIRLIST='../../annotationCache/DirLists'
-HOMEVIDEOS='../../VLMFrames'
+HOMEIMAGES='/Images'
+HOMEDIRLIST='/var/www/html/annotationCache/DirLists'
+HOMEVIDEOS='/var/www/html/VLMFrames'
 
 # Inputs:
 dirlist=$1
